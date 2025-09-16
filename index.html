@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitapp — Anteprima Ufficiale</title>
+    <meta name="description"
+        content="Anteprima ufficiale di Fitapp: allenamenti smart, coaching AI, piani personalizzati. Scarica la preview e scopri l'UI/UX." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="brand" href="#" aria-label="Fitapp Home">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                        <stop offset="0" stop-color="#7C3AED" />
+                        <stop offset="1" stop-color="#22D3EE" />
+                    </linearGradient>
+                </defs>
+                <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#g)" stroke-width="2" />
+                <path d="M8 14l2.5-4 2.5 3 2-3" stroke="url(#g)" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <span>Fitapp</span>
+        </a>
+        <button class="menu-toggle" aria-label="Apri menu">☰</button>
+        <button class="theme-toggle" aria-label="Cambia tema" title="Cambia tema" aria-pressed="false">
+            <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+            </span>
+        </button>
+        <nav class="menu" aria-label="Primario">
+            <a href="#features">Funzioni</a>
+            <a href="#gallery">Galleria</a>
+            <a href="#uiux">UI/UX</a>
+            <a href="#download">Download</a>
+            <a class="btn btn--ghost" href="#beta">Prova la Beta</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero" aria-label="Anteprima Fitapp">
+            <video class="hero__video" autoplay muted loop playsinline
+                poster="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                <source src="https://cdn.coverr.co/videos/coverr-man-doing-burpees-in-a-gym-8583/1080p.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="reveal">Allenati come un pro, con stile da evento</h1>
+                <p class="lead reveal">Coaching potenziato dall'intelligenza artificiale, piani dinamici, statistiche da
+                    urlo. L'anteprima di Fitapp è qui.</p>
+                <div class="cta reveal">
+                    <a href="#download" class="btn btn--primary">Scarica la preview</a>
+                    <a href="#features" class="btn btn--secondary">Scopri le funzioni</a>
+                </div>
+                <div class="trust reveal">
+                    <span class="pill">Beta pubblica</span>
+                    <span class="pill">UI/UX Next‑gen</span>
+                    <span class="pill">Ottimizzato per mobile</span>
+                </div>
+            </div>
+            <div class="hero__shine" aria-hidden="true"></div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="section">
+            <div class="section__header reveal">
+                <h2>Funzioni che spaccano</h2>
+                <p>Un set completo per allenarti al massimo, con un design da palcoscenico.</p>
+            </div>
+            <div class="grid features">
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Coaching AI</h3>
+                    <p>Consigli in tempo reale e adattivi, per spingere il giusto senza esagerare.</p>
+                </article>
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 12a9 9 0 1018 0A9 9 0 003 12zm6 0l3 3 4-6" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Piani Smart</h3>
+                    <p>Programmi che si adattano a obiettivi, tempo, attrezzatura e progressi.</p>
+                </article>
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 19h16M7 11h10M9 7h6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Statistiche Pro</h3>
+                    <p>Dashboard avanzata: carico, volume, frequenza cardiaca, PR e tendenze.</p>
+                </article>
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14m7-7H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Gamification</h3>
+                    <p>Obiettivi per tenere alta la motivazione.</p>
+                </article>
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Allenamenti guidati</h3>
+                    <p>Video, cue vocali e timer dinamici per sessioni senza pensieri.</p>
+                </article>
+                <article class="card tilt reveal">
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 1v4m0 14v4M1 12h4m14 0h4M4.9 4.9l2.8 2.8m8.6 8.6l2.8 2.8m0-14.2l-2.8 2.8M7.7 16.3L4.9 19.1"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Modalità notturna</h3>
+                    <p>Design OLED‑friendly con contrasto perfetto indoor/outdoor.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- GALLERY (horizontal scroll) -->
+        <section id="gallery" class="section">
+            <div class="section__header reveal">
+                <h2>Galleria App</h2>
+                <p>Scorri con il mouse per muovere le immagini orizzontalmente. Su smartphone/tablet scorri normalmente.
+                </p>
+            </div>
+            <div class="gallery" aria-label="Screenshot dell'app">
+                <div class="gallery__track">
+                    <!-- Sostituisci con le tue immagini -->
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1600&auto=format&fit=crop"
+                        alt="Dashboard allenamento" loading="lazy">
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1552074284-5cf0f6245e2e?q=80&w=1600&auto=format&fit=crop"
+                        alt="Statistiche e progressi" loading="lazy">
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop"
+                        alt="Allenamento HIIT" loading="lazy">
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1600&auto=format&fit=crop"
+                        alt="Programmi personalizzati" loading="lazy">
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1545324418-16b2fdbf8e28?q=80&w=1600&auto=format&fit=crop"
+                        alt="Meal plan" loading="lazy">
+                    <img class="gallery__item"
+                        src="https://images.unsplash.com/photo-1571907480495-1c3a2d53b0f9?q=80&w=1600&auto=format&fit=crop"
+                        alt="Yoga flow" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- UI/UX SHOWCASE -->
+        <section id="uiux" class="section section--alt">
+            <div class="section__header reveal">
+                <h2>Piani di abbonamento</h2>
+                <p>Scegli il piano adatto alle tue esigenze.</p>
+            </div>
+            <div class="ui-grid">
+                <div class="phone tilt reveal">
+                    <div class="phone__bezel"></div>
+                    <div class="phone__screen">
+                        <div class="screen mock1">Coming soon</div>
+                    </div>
+                </div>
+                <div class="phone tilt reveal delay">
+                    <div class="phone__bezel"></div>
+                    <div class="phone__screen">
+                        <div class="screen mock2">Coming soon</div>
+                    </div>
+                </div>
+                <div class="phone tilt reveal delay2">
+                    <div class="phone__bezel"></div>
+                    <div class="phone__screen">
+                        <div class="screen mock3">Coming soon</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section id="download" class="section">
+            <div class="section__header reveal">
+                <h2>Scarica la Preview</h2>
+                <p>Disponibile su Android e iOS in accesso anticipato. Nessuna carta richiesta.</p>
+            </div>
+            <div class="download">
+                <a class="store badge tilt reveal" href="#" aria-label="Scarica su App Store">
+                    <div class="badge__icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.665 16.568c-.36.83-.79 1.57-1.29 2.22-.68.87-1.24 1.46-1.68 1.76-.67.49-1.39.74-2.15.76-.55 0-1.21-.16-1.99-.48-.78-.32-1.5-.48-2.16-.48-.69 0-1.43.16-2.24.48-.81.32-1.46.49-1.95.51-.74.03-1.49-.24-2.26-.82-.49-.37-1.04-.97-1.65-1.78C1.66 17.06 1 15.68 1 14.28c0-1.27.28-2.36.85-3.29.45-.75 1.05-1.35 1.81-1.8.76-.45 1.57-.68 2.44-.7.48 0 1.11.18 1.9.53.79.35 1.3.53 1.55.53.18 0 .73-.21 1.65-.62.88-.38 1.62-.54 2.23-.49 1.64.13 2.87.78 3.69 1.95-1.47.89-2.2 2.13-2.19 3.73.02 1.25.46 2.29 1.31 3.12.39.41.82.72 1.28.94.1.04.11.08.05.13ZM15.84 2.39c0 .94-.34 1.82-1.01 2.64-.81.95-1.8 1.5-2.88 1.41-.02-.11-.02-.23-.02-.36 0-.91.4-1.88 1.1-2.67.35-.4.79-.73 1.32-.98.53-.26 1.04-.39 1.52-.4-.01.12-.03.25-.03.36Z" />
+                        </svg>
+                    </div>
+                    <div class="badge__text">
+                        <span>Scarica su</span>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a class="store badge tilt reveal" href="#" aria-label="Disponibile su Google Play">
+                    <div class="badge__icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M3.6 1.8l10.3 10.2L3.6 22.2c-.5-.27-.8-.8-.8-1.5V3.3c0-.7.3-1.2.8-1.5Zm11.9 11.2l2.5 2.5c.5.5.8 1 .8 1.6 0 .7-.3 1.2-.8 1.5L15 20.5l.5-7.5ZM15 3.5l3 1.9c.5.27.8.8.8 1.5 0 .6-.3 1.1-.8 1.6l-2.5 2.5L15 3.5Zm-1.1 9.2l1 .9-.6 8-9.7-6.1 9.3-2.8Z" />
+                        </svg>
+                    </div>
+                    <div class="badge__text">
+                        <span>Disponibile su</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+                <div class="qr reveal" aria-label="QR per download">
+                    <svg viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="QR placeholder">
+                        <rect width="120" height="120" rx="12" fill="#0b0f16" />
+                        <rect x="10" y="10" width="30" height="30" fill="#22D3EE" />
+                        <rect x="80" y="10" width="30" height="30" fill="#7C3AED" />
+                        <rect x="10" y="80" width="30" height="30" fill="#22D3EE" />
+                        <rect x="40" y="40" width="20" height="20" fill="#7C3AED" />
+                        <rect x="70" y="70" width="15" height="15" fill="#22D3EE" />
+                    </svg>
+                    <p>Scansiona con il telefono</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <span>© <span id="year"></span> Fitapp</span>
+            </span> Dott. Gianlorenzo Malvasi</span>
+            <div class="social">
+                <a href="#" aria-label="Instagram" class="tilt">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6-1a1 1 0 100 2 1 1 0 000-2z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="X" class="tilt">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.5 3H21l-7.5 8.6L21.5 21H18l-6-6.9L5 21H1.5l7.9-9.1L2 3h3.6l5.4 6.2L17.5 3z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube" class="tilt">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
