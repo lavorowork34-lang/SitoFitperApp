@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistenza • Fitapp</title>
+  <meta name="description" content="Pagina di assistenza Fitapp: FAQ, contatti, chat con IA (Gemini) e guide rapide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Stili globali (navbar, tema, layout) -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Stili pagina assistenza -->
+  <link rel="stylesheet" href="./st.css" />
+</head>
+
+<body>
+  <!-- Navbar identica a index.html -->
+  <header class="navbar">
+    <a class="brand" href="index.html" aria-label="Fitapp Home">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#7C3AED" />
+            <stop offset="1" stop-color="#22D3EE" />
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="20" height="20" rx="6" stroke="url(#g)" stroke-width="2"/>
+        <path d="M8 14l2.5-4 2.5 3 2-3" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Fitapp</span>
+    </a>
+    <button class="menu-toggle" aria-label="Apri menu">☰</button>
+    <button class="theme-toggle" aria-label="Cambia tema" title="Cambia tema" aria-pressed="false">
+      <span class="toggle-track">
+        <span class="toggle-thumb"></span>
+      </span>
+    </button>
+    <nav class="menu" aria-label="Primario">
+      <a href="#features">Funzioni</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#uiux">UI/UX</a>
+      <a href="#download">Download</a>
+      <a href="assistenza.html">Assistenza</a>
+      <a class="btn btn--ghost" href="#beta">Prova la Beta</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO ASSISTENZA -->
+    <section class="help-hero reveal" aria-label="Assistenza Fitapp">
+      <div class="help-hero__inner">
+        <h1>Serve aiuto? Ci pensiamo noi</h1>
+        <p class="lead">FAQ smart, supporto rapido, e una chat con l'IA per risposte immediate powered by Gemini.</p>
+        <div class="cta">
+          <button class="btn btn--primary" id="open-ai-chat">Parla con l'IA</button>
+          <button class="btn btn--secondary" id="open-contact">Contattaci</button>
+        </div>
+        <div class="pill-wrap">
+          <span class="pill">Tempo medio risposta: ~2 min</span>
+          <span class="pill">Disponibile 24/7</span>
+          <span class="pill">Tutorial interattivi</span>
+        </div>
+      </div>
+      <div class="help-hero__shine" aria-hidden="true"></div>
+    </section>
+
+    <!-- CANALI DI SUPPORTO -->
+    <section class="section" id="canali">
+      <div class="section__header reveal">
+        <h2>Come possiamo aiutarti</h2>
+        <p>Scegli il canale che preferisci. Gli effetti e le animazioni rendono tutto più fluido.</p>
+      </div>
+      <div class="grid help-grid">
+        <article class="card tilt reveal">
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>FAQ Interattive</h3>
+          <p>Domande frequenti con ricerca, filtri e animazioni reveal.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1018 0A9 9 0 003 12zm6 0l3 3 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Tutorial Pop‑up</h3>
+          <p>Mini guide con overlay dinamico per risolvere in pochi step.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M7 11h10M9 7h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Chat con IA (Gemini)</h3>
+          <p>Risposte istantanee: incolla la tua API Key e parti subito.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section section--alt" id="faq">
+      <div class="section__header reveal">
+        <h2>FAQ</h2>
+        <p>Le risposte alle domande più comuni. Clicca per espandere.</p>
+      </div>
+      <div class="faq">
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false">Come attivo la modalità scura?</button>
+          <div class="faq__a"><p>Usa l'interruttore in alto a destra della barra del menù. La preferenza viene salvata.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false">Posso sincronizzare i miei progressi?</button>
+          <div class="faq__a"><p>Sì, la sincronizzazione è automatica quando effettui l'accesso dal tuo account.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false">L'IA funziona offline?</button>
+          <div class="faq__a"><p>No, è richiesta una connessione internet e una API key valida per Gemini.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINALE -->
+    <section class="section" id="contatti">
+      <div class="section__header reveal">
+        <h2>Non hai trovato ciò che cercavi?</h2>
+        <p>Scrivici subito oppure apri la chat con l'IA.</p>
+        <div class="cta">
+          <button class="btn btn--primary" id="open-contact-2">Apri modulo contatti</button>
+          <button class="btn btn--secondary" id="open-ai-chat-2">Apri chat IA</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL CONTATTI -->
+  <div class="modal" id="contact-modal" aria-hidden="true" aria-labelledby="contact-title" role="dialog">
+    <div class="modal__overlay" data-close="modal"></div>
+    <div class="modal__dialog">
+      <header class="modal__header">
+        <h3 id="contact-title">Contattaci</h3>
+        <button class="modal__close" aria-label="Chiudi" data-close="modal">✕</button>
+      </header>
+      <form class="modal__body" id="contact-form">
+        <label class="field">
+          <span>Nome</span>
+          <input type="text" name="name" required />
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label class="field">
+          <span>Messaggio</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="modal__actions">
+          <button type="submit" class="btn btn--primary">Invia</button>
+          <button type="button" class="btn btn--secondary" data-close="modal">Annulla</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CHAT POPUP IA (GEMINI) -->
+  <div class="ai-chat" id="ai-chat" aria-live="polite">
+    <div class="ai-chat__window">
+      <header class="ai-chat__header">
+        <div class="ai-chat__title">
+          <span class="status-dot" id="ai-status"></span>
+          <strong>Fitapp AI</strong>
+          <span class="muted"> • Gemini</span>
+        </div>
+        <div class="ai-chat__actions">
+          <button id="ai-settings" title="Impostazioni">⚙️</button>
+          <button id="ai-minimize" title="Minimizza">—</button>
+          <button id="ai-close" title="Chiudi">✕</button>
+        </div>
+      </header>
+      <div class="ai-chat__settings" id="ai-settings-panel" hidden>
+        <label class="field inline">
+          <span>Gemini API Key</span>
+          <input type="password" id="gemini-key" placeholder="AIza..." />
+          <button class="btn btn--secondary" id="save-key" type="button">Salva</button>
+        </label>
+        <p class="muted small">La chiave è salvata localmente nel tuo browser.</p>
+      </div>
+      <div class="ai-chat__log" id="ai-log" aria-label="Conversazione"></div>
+      <form class="ai-chat__input" id="ai-form">
+        <input id="ai-text" type="text" placeholder="Scrivi un messaggio..." autocomplete="off" required />
+        <button class="btn btn--primary" type="submit">Invia</button>
+      </form>
+    </div>
+    <button class="ai-chat__fab btn btn--primary" id="ai-fab" aria-label="Apri chat IA">✨</button>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Script globali (menu, tema, reveal, tilt) -->
+  <script src="./script.js"></script>
+  <!-- Script pagina assistenza (FAQ, modali, chat IA) -->
+  <script src="./s.js"></script>
+</body>
+</html>
